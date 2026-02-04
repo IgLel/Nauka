@@ -40,6 +40,14 @@
     $wynik=($e>=$f);
     echo "<p> porownanie e >= f to: ".$wynik."</p>";
 
+    $g=true;
+    $h=false;
+    $i=true;
+    $j=false;
+    echo" <br>spojnik LUB(||) wynik:". ($g||$h);
+    echo" <br>spojnik LUB(g&&h) wynik:". ($g&&$h);
+    echo" 
+
 
    ?>
 
