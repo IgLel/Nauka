@@ -12,11 +12,15 @@
    $b="napis";
    $c=7;
    $d="7";
+   $e=2;
+   $f="4";
    echo "a= ".$a. "b= ".$b. "c= ".$c. "d= ".$d. "<br>";
    echo "a= ".$a."<br>";
    echo "b= ".$b."<br>";
    echo "c= ".$c."<br>";
    echo "d= ".$d."<br>";
+   echo "e= ".$e."<br>";
+   echo "f= ".$f."<br>";
    $wynik;
    
    $wynik=($a<$c);
@@ -33,6 +37,9 @@
     echo "porownanie a != c to: ".$wynik."<br>";
     $wynik=($a===$c);
     echo "porownanie a === c to: ".$wynik."<br>";
+    $wynik=($e>=$f);
+    echo "<p> porownanie e >= f to: ".$wynik."</p>";
+
 
    ?>
 
