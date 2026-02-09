@@ -9,11 +9,13 @@
  
  <p id="wynik"></p> 
  <script>
+    var a=10; var b=20;
     var wypisz=document.getElementById("wynik");
     wypisz.innerHTML="wiz";
     wypisz.innerHTML+="wazual";
-
-
+    wypisz.innerHTML+="<br>";
+    wypisz.innerHTML+="a="+a;
+    wypisz.innerHTML+="a+b"+(a+b);
 
  </script>
 
