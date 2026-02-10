@@ -16,6 +16,7 @@
     wypisz.innerHTML+="<br>";
     wypisz.innerHTML+="a="+a;
     wypisz.innerHTML+="a+b"+(a+b);
+    var e;
 
  </script>
 
