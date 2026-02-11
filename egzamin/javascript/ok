@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+ <p id="wynik"></p>
+
+ <script>
+
+ var wypisz=document.getElementById("wynik");
+ var a=10; 
+ if(a<10)
+ {
+    wypisz.innerHTML="a jest ujemne i wynosi:" +a;
+ }
+ else if(a>10)
+ {
+    wypisz.innerHTML="a jest dodatnie i wynosi:" +a;
+ }
+ else
+ {
+    wypisz.innerHTML="a jest rowne 0";
+ }
+ 
+
+
+
+
+
+
+ </script>
+ 
+ 
+
+
+    
+</body>
+</html>
