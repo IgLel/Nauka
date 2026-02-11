@@ -12,18 +12,50 @@
 
  var wypisz=document.getElementById("wynik");
  var a=10; 
- if(a<10)
+  
+ if(a<0)
  {
     wypisz.innerHTML="a jest ujemne i wynosi:" +a;
  }
- else if(a>10)
+ else if(a>0)
  {
     wypisz.innerHTML="a jest dodatnie i wynosi:" +a;
  }
- else
+ else 
  {
     wypisz.innerHTML="a jest rowne 0";
  }
+ 
+ wypisz.innerHTML+="<br>";
+  if(a==10)
+  {
+    wypisz.innerHTML+="a jest rowne 10";
+
+  }
+  else
+  {
+
+   wypisz.innerHTML+="a jest rozne od 10";
+
+  }
+  
+  wypisz.innerHTML+="<br>";
+  var c=5
+  var d=10;
+  var wynik=c-d
+  if(wynik>0)
+  {
+    wypisz.innerHTML+="wynik dodatni i wynosi:" +wynik; 
+  }
+   
+   wypisz.innerHTML+="<br>";
+   
+  if(wynik<0)
+  {
+    wypisz.innerHTML+="wynik ujemny i wynosi:" +wynik; 
+  }
+
+
  
 
 
