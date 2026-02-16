@@ -43,17 +43,38 @@
  
  if(koszyk>50)
  {
-    wypisz.innerHTML="Cena koszyka jest wieksza od 50 zl i wynosi" +koszyk+"zl";
+    wypisz.innerHTML+="Cena koszyka jest wieksza od 50 zl i wynosi" +koszyk +"zl";
  }
  else if(koszyk<50)
  {
-    wypisz.innerHTML="Cena koszyka jest mniejsza od 50 zl i wynosi" +koszyk+"zl";
+    wypisz.innerHTML+="Cena koszyka jest mniejsza od 50 zl i wynosi" +koszyk +"zl";
  }
  else
  {
-    wypisz.innerHTML="Cena koszyka wynosi" +koszyk+"zl";
+    wypisz.innerHTML+="Cena koszyka wynosi" +koszyk+"zl";
  }
 
+ wypisz.innerHTML+="<br>"
+ for(var i=0; i<100; i++)
+ {
+    wypisz.innerHTML+="licznik i=" +i+ "<br>";
+ }
+ 
+ wypisz.innerHTML+="petla WHILE <br>"
+ var j=0;
+ while(j<10)
+ {
+    wypisz.innerHTML+="j ="+j+"<br>";
+    j++
+ }
+
+  wypisz.innerHTML+="petla DO WHILE <br>";
+  var k=0;
+  do
+  {
+    wypisz.innerHTML+="zmienna k = "+k+ "<br>";
+    k++;
+  }while(k<10);
 
 
 
