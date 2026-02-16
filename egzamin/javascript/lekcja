@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <p id="wynik"></p>
+ <script>
+  var ileLitrow;
+  var benzyna;
+  var diesel;
+  var cena;
+  ileLitrow=55;
+  benzyna=5.59;
+  diesel=6;
+  var paliwo;
+  var wypisz=document.getElementById("wynik");
+  paliwo="benzyna";
+  if(paliwo=="benzyna")
+  {
+    cena=ileLitrow*benzyna
+    wypisz.innerHTML="za benzyne zaplacisz"+cena+"zl";
+  }
+  else if(paliwo=="diesel")
+  {
+    cena=ileLitrow*diesel
+    wypisz.innerHTML="za diesel zaplacisz"+cena+"zl";
+  }
+  else
+  {
+    wypisz.innerHTML="zle paliwo";
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+    
+</body>
+</html>
