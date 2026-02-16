@@ -15,26 +15,44 @@
   ileLitrow=55;
   benzyna=5.59;
   diesel=6;
-  var paliwo;
-  var wypisz=document.getElementById("wynik");
+  var paliwo; 
+  var wypisz=document.getElementById("wynik"); 
   paliwo="benzyna";
   if(paliwo=="benzyna")
   {
     cena=ileLitrow*benzyna
-    wypisz.innerHTML="za benzyne zaplacisz"+cena+"zl";
+    wypisz.innerHTML="za benzyne zaplacisz" + cena + "zl"; 
   }
   else if(paliwo=="diesel")
   {
     cena=ileLitrow*diesel
-    wypisz.innerHTML="za diesel zaplacisz"+cena+"zl";
+    wypisz.innerHTML="za diesel zaplacisz" + cena + "zl";
   }
   else
   {
     wypisz.innerHTML="zle paliwo";
   }
 
+ wypisz.innerHTML+="<br>";
 
+ var cenaOgorka=5;
+ var cenaSalaty=10;
+ var cenaPomidora=4.75;
 
+ var koszyk=2*cenaOgorka+cenaSalaty+4*cenaPomidora;
+ 
+ if(koszyk>50)
+ {
+    wypisz.innerHTML="Cena koszyka jest wieksza od 50 zl i wynosi" +koszyk+"zl";
+ }
+ else if(koszyk<50)
+ {
+    wypisz.innerHTML="Cena koszyka jest mniejsza od 50 zl i wynosi" +koszyk+"zl";
+ }
+ else
+ {
+    wypisz.innerHTML="Cena koszyka wynosi" +koszyk+"zl";
+ }
 
 
 
