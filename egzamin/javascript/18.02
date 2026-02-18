@@ -14,6 +14,8 @@
  var b=6;
  var c=3;
  var d=7;
+ var liczba=-100;
+ var wiek=10;
  
  if (b == 0)
  {
@@ -67,13 +69,55 @@
   
  if(a % b == 0)
  {
-   wypisz.innerHTML="Liczba a jest podzielna przez b i wynosi: " +wynik;
+   wypisz.innerHTML+="Liczba a jest podzielna przez b i wynosi: " +wynik;
  }
  
  else
  {
-   wypisz.innerHTML="Liczba a nie jest podzielna przez b";
+   wypisz.innerHTML+="Liczba a nie jest podzielna przez b";
  }
+
+ wypisz.innerHTML+="<br>"
+  
+ if(liczba > 0)
+ {
+   wypisz.innerHTML+="Liczba jest dodatnia";
+ }
+ 
+ else if(liczba < 0)
+ {
+   wypisz.innerHTML+="liczba jest ujemna";
+ }
+
+ else if(liczba == 0)
+ {
+   wypisz.innerHTML+="liczba jest rowna 0";
+ }
+
+ wypisz.innerHTML+="<br>";
+
+ 
+ if(wiek < 11)
+ {
+   wypisz.innerHTML+="Dziecko";
+ }
+ 
+ else if(wiek >= 11 && wiek <=17)
+ {
+   wypisz.innerHTML+="Nastolatek";
+ }
+
+ else if(wiek >= 18)
+ {
+   wypisz.innerHTML+="Dorosly";
+ }
+
+
+
+
+
+
+
 
 
 
