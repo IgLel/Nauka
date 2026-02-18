@@ -12,6 +12,8 @@
  var x=0;
  var a=4;
  var b=6;
+ var c=3;
+ var d=7;
  
  if (b == 0)
  {
@@ -23,12 +25,55 @@
   wypisz.innerHTML = "Wynik dzielenia wynosi: " + wynik;
   }
 
+  wypisz.innerHTML+="<br>";
 
+ if(b == 0 || d == 0)
+ {
+    wypisz.innerHTML += "Nie można dzielić przez 0!";
+ }
+  
+ else
+ {
+  var wynik = a / b + c / d;
+  wypisz.innerHTML += "Wynik dzielenia wynosi: " + wynik;
+ }
+ 
+  wypisz.innerHTML+="<br>";
 
+  if((b-4) == 0)
+ {
+    wypisz.innerHTML += "Nie można dzielić przez 0!";
+ }
+  
+ else
+ {
+  var wynik = a + b / b - 4;
+  wypisz.innerHTML += "Wynik dzielenia wynosi: " + wynik;
+ }
+ 
+  wypisz.innerHTML+="<br>";
 
+  if(a % 2 == 0)
+ {
+    wypisz.innerHTML += "Liczba jest parzysta" ;
+ }
+  
+ else
+ {
+  wypisz.innerHTML += "Liczba jest nieparzysta";
+ }
 
-
-
+ wypisz.innerHTML+="<br>"
+  
+ if(a % b == 0)
+ {
+   wypisz.innerHTML="Liczba a jest podzielna przez b i wynosi: " +wynik;
+ }
+ 
+ else
+ {
+   wypisz.innerHTML="Liczba a nie jest podzielna przez b";
+ }
 
 
 
