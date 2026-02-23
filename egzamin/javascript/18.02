@@ -113,8 +113,32 @@
  }
 
 
+ wypisz.innerHTML =
+     "Liczba całkowita: " + liczbaCalkowita + "<br>" +
+     "Liczba zmiennoprzecinkowa: " + liczbaZmiennoprzecinkowa + "<br>" +
+     "Typ znakowy: " + typZnakowy + "<br>" +
+     "Bool1: " + bool1 + "<br>" +
+     "Bool2: " + bool2;
 
+console.log("Dodawanie:", a + b); // 16
 
+// 2. Odejmowanie
+console.log("Odejmowanie:", a - b); // 8
+
+// 3. Mnożenie
+console.log("Mnożenie:", a * b); // 48
+
+// 4. Dzielenie
+console.log("Dzielenie:", a / b); // 3
+
+// 5. Dzielenie całkowite (zaokrąglenie w dół)
+console.log("Dzielenie całkowite:", Math.floor(a / b)); // 3
+
+// 6. Reszta z dzielenia (modulo)
+console.log("Modulo:", a % b); // 0
+
+// 7. Potęgowanie
+console.log("Potęgowanie:", a ** b); // 20736
 
 
 

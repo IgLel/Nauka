@@ -103,27 +103,45 @@
  $haslo="haslo";
  if (strlen($haslo) < 5)
   {
-    echo "bardzo slabe"
+    echo "bardzo slabe";
   }
    
-   if else (strlen($haslo) >= 5 && strlen($haslo) < 8)
+  else if(strlen($haslo) >= 5 && strlen($haslo) < 8)
   {
-    echo "slabe"
+    echo "slabe";
   }
 
-  if else(strlen($haslo) >= 9 && strlen($haslo) < 11)
+  else if(strlen($haslo) >= 9 && strlen($haslo) < 11)
   {
-    echo "silne"
+    echo "silne";
   }
 
   
-  if else(strlen($haslo) > 11)
+  else if(strlen($haslo) > 11)
   {
-    echo " bardzo silne"
+    echo "bardzo silne";
   }
  
 
+ echo "<br>";
+ echo "<br>";
+ echo "Zadanie 7:";
+ echo "<br>";
 
+ $rok=1600;
+ if($rok < 1582)
+  {
+    echo "Program obsluguje lata od 1582 roku.";
+  }
+  else if($rok % 4 == 0 && $rok % 100 != 0 || $rok % 400 == 0)
+  {
+    echo "Rok jest przestepny.";
+  }
+  
+  else
+  {
+    echo "Rok nie jest przestepny.";
+  }
 
 
 
