@@ -8,23 +8,53 @@
 <body>
  <p id="wynik"></p>
  <script>
- var wypisz = document.getElementById(wynik);
+ var wypisz = document.getElementById("wynik");
  var liczbaCalkowita=10;
  var liczbaZmiennoprzecinkowa=2.14;
  var typZnakowy="JavaScript";
  var bool1=true;
  var bool2=false;
  var a=5;
- var b=3;
+ var b=3; 
+ 
+ wypisz.innerHTML+="Liczbacalkowita" + liczbaCalkowita;
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="Liczbazmiennoprzecinkowa" + liczbaZmiennoprzecinkowa;
+  wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="Liczbazmiennoprzecinkowa" + liczbaZmiennoprzecinkowa;
+  wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="Typznakowy" + typZnakowy;
+  wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="zmiennaBool1" + bool1;
+  wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="zmiennaBool2" + bool2;
 
- console.log("Dodawanie:" a + b);
- console.log("Odejmowanie:" a - b);
- console.log("Mnozenie:" a * b);
- console.log("Dzielenie:" a / b);
- console.log("Potegowanie:" a ** b);
- console.log("ResztaZdzielenia:" a % b);
+ wypisz.innerHTML+="<br>";
 
 
+
+ document.write("Dodawanie:" + (a + b)); 
+ document.write("Odejmowanie:" + (a - b));
+ document.write("Mnozenie:" + (a * b));
+ document.write("Dzielenie:" + (a / b));
+ document.write("Potegowanie:" + (a ** b));
+ 
+ 
+  wypisz.innerHTML+="<br>";
+
+ if(a % 2 == 0)
+ {
+    wypisz.innerHTML+= "Liczba jest parzysta";
+ }
+ else
+ {
+    wypisz.innerHTML+= "Liczba jest nie parzysta";
+ }
+
+ 
+  wypisz.innerHTML+="<br>";
+
+ 
 
 
 
