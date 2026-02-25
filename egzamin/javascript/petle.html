@@ -6,8 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="wypisz"></p>
     <script> 
-   <p id="wypisz"></p>
+   
   var wypisz=document.getElementById("wypisz");
    wypisz.innerHTML="Zadanie 1";
    wypisz.innerHTML+="<br>";
@@ -31,6 +32,19 @@
   wypisz.innerHTML+="Zadanie 3";
   wypisz.innerHTML+="<br>";
   wypisz.innerHTML+="<br>";
+
+  var suma = 0;
+
+ for (let i = 1; i <= 10; i++) 
+ {
+    suma += i;
+ }
+
+ wypisz.innerHTML+="Suma wynosi: " + suma;
+
+
+
+  
  
   </script>  
     
