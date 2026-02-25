@@ -46,7 +46,7 @@
     $j=false;
     echo" <br>spojnik LUB(||) wynik:". ($g||$h);
     echo" <br>spojnik LUB(g&&h) wynik:". ($g&&$h);
-    echo" 
+   
 
 
    ?>
