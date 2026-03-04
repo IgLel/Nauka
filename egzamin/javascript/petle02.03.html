@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="wypisz"></p>
+    <script> 
+   
+  var wypisz=document.getElementById("wypisz");
+   wypisz.innerHTML="Zadanie 1";
+   wypisz.innerHTML+="<br>";
+   wypisz.innerHTML+="<br>";
+  for(let i = 1; i < 10; i++)
+  {
+    wypisz.innerHTML += i + "<br>";
+  }
+ 
+ 
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="Zadanie 2";
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="<br>";
+   for(let i = 10; i >= 1 ; i--)
+  {
+    wypisz.innerHTML+= i + "<br>" ;
+  }
+ 
+  wypisz.innerHTML+="<br>";
+  wypisz.innerHTML+="Zadanie 3";
+  wypisz.innerHTML+="<br>";
+  wypisz.innerHTML+="<br>";
+
+  var suma = 0;
+
+ for (let i = 1; i <= 10; i++) 
+ {
+    suma += i;
+ }
+
+ wypisz.innerHTML+="Suma wynosi: " + suma;
+ 
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="Zadanie 4";
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="<br>";
+
+   for (let i = 0; i < 10; i++) 
+   {
+      wypisz.innerHTML += (2 + i * 2) + "<br>";
+   }
+
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="Zadanie 5";
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="<br>";
+ 
+ var x = 5;
+ var y = 1000;
+ var suma = 0;
+
+ for(var i=1; i<=x; i++)
+ {
+  suma = suma+y;
+  suma = suma * 1.08;
+ }
+  wypisz.innerHTML+="Kwota zgromadzona przez pracownika wynosi: "+suma.toFixed(2) +"zł" + "<br>";
+   
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="Zadanie 6";
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="<br>";
+
+ for(var element=5; element <= 100; element += 10)
+ {
+  suma += "Suma = " +suma + "<br>";
+ }
+
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="Zadanie 11";
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="<br>";
+
+ var n = 5;
+ var silnia = 1; 
+
+ for(var i = 1; i <= n; i++)
+{
+  silnia *= i;
+}
+
+ wypisz.innerHTML+=silnia;
+ 
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="Zadanie 12";
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="<br>";
+
+ for(var i=1; i<=n; i++)
+ {
+  wypisz.innerHTML+=pierwszaliczba;
+  pierwszaliczba=pierwszaliczba*pierwszaliczba;
+  wypisz.innerHTML+="<br>";
+ }
+
+
+
+  </script>
+ 
+    
+</body>
+</html>
