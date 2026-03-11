@@ -43,14 +43,53 @@
 
     echo "<br>";
  }
-  
+   
+ echo "<br>";
+ echo "Zadanie 3";
+ echo "<br>";
+
+ for ($i = 1; $i <= 100; $i += 2) {
+    echo $i . " ";
+ }
+
+ echo "<br>";
 
 
+ for ($i = 100; $i >= 1; $i -= 4) {
+    echo $i . " ";
+ } 
+ 
 
+ echo "<br>";
+ echo "Zadanie 4";
+ echo "<br>";
 
+ $n = 10;
 
+ echo "Kwadraty liczb od 10 do 1: <br>";
 
+ while ($n > 0) 
+    {
+    echo "n = $n, n^2 = " . ($n * $n) . "<br>";
+    $n--;
+    }
 
+ echo "<br>Kwadraty liczb parzystych: <br>";
+
+ $n = 10;
+
+ while ($n > 0) 
+ {
+    if ($n % 2 == 0)
+    {
+        echo "n = $n, n^2 = " . ($n * $n) . "<br>";
+    }
+    $n--;
+ }
+
+ echo "<br>";
+ echo "Zadanie 5";
+ echo "<br>";
 
 
 
