@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montaż paneli podłogowych</title>
+</head>
+<body>
+    <section id="nagłówkowy">
+        
+
+
+
+
+    </section>
+
+    <section id="menu">
+        <a href="index.html">Strona główna</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="koszty.html">Kalkulator kosztów</a>
+
+
+
+
+    </section>
+
+    <section id="główny">
+        <h1>Kalkulator kosztów montażu</h1>
+        <label for="width">Szerokość pomieszczenia [m]:</label>
+        <input type="number" id="szerokość" name="width"> <br><br>
+        <label for="width">Długość pomieszczenia [m]: </label>
+        <input type="number" id="długość" name="width"><br><br>
+        <p>Typ panelu: </p><br>
+       
+        <input type="radio" name="panele" id="pw">
+        <label> Panele winylowe</label><br>
+        <input type="radio" name="panele" id="dp">
+        <label> Deska podłogowa</label><br>
+        <input type="radio" name="panele" id="pl">
+        <label>Panele laminowane</label><br>
+        <button onclick="Oblicz()">Oblicz</button>
+        <p id="wynik"></p>
+        <script>
+        function Oblicz()
+        {
+            var wypisz=document.getElementById("wynik");
+            var szerokość=document.getElementById("szerokość").value;
+            var długość=document.getElementById("długość").value;
+            var pl=12;
+            var pw=14;
+            var dp=18;
+            var wynik=0;
+            var pole=0;
+            if(długość>0||szerokość>0)
+            {
+                pole=długość*szerokość;
+               if(document.getElementById("pl").checked==true)
+               {
+                 wynik=szerokość*długość*pl;
+               }
+               else if(document.getElementById("pw").checked==true)
+               {
+                 wynik=szerokość*długość*pw;
+                }
+                else if(document.getElementById("dp").checked==true)
+                {
+                 wynik=szerokość*długość*dp;
+                }
+                wypisz.innerHTML="Pole powierzchni pomieszczenia: " + pole + " Koszt montażu: " +wynik;
+            }
+
+
+        }
+
+
+
+
+
+
+
+        </script>  
+      
+
+
+
+
+    </section>
+
+    <footer id="stopka">
+        <h5>"Autor strony: </h5>
+
+
+
+
+    </footer>
+    
+</body>
+</html>

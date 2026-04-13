@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <p id="wynik"></p>
+ <script>
+ var wypisz=document.getElementById("wynik");
+
+ var tablica = new Array(1,2,3,4,5,6,7,8,9,10);
+ wypisz.innerHTML+="tablica[0]= "+tablica[0] + "<br>";
+
+ for(var i=0; i<tablica.length; i++)
+ {
+    wypisz.innerHTML+="tablica["+i+"]=" +tablica[i] +"<br>";
+ }
+
+ var j=0
+ while(j<tablica.length)
+ {
+    wypisz.innerHTML+="tablica["+j+"]=" +tablica[j] +"<br>";
+    j++;
+ }
+
+
+
+
+
+
+
+
+
+
+ </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopnie</title>
+</head>
+<body>
+    <p id="wypisz"></p>
+    <script>
+    var wypisz=document.getElementById("wypisz");
+    
+    wypisz.innerHTML="<h2>Stopnie</h2>";
+    var stopnie=prompt("Podaj °C");
+    var fahr=(stopnie*1.8)+32;
+    wypisz.innerHTML+=stopnie+" °C to "+fahr+" ° fahrenheita <br>" + "";
+    var fahr1=prompt("Podaj °F");
+    var stopnie1=(fahr1-32)/1.8;
+    wypisz.innerHTML+=fahr1+"°Fahrenheita to "+stopnie1+" °C ";
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
