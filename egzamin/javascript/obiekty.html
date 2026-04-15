@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="wynik"></p>
+    <script>
+        var wypisz=document.getElementById("wynik");
+        wypisz.innerHTML="<h1>Obiekty</h1>";
+
+        function Osoba(imie,nazwisko,wiek)
+        {
+            this.imie=imie;
+            this.nazwisko=nazwisko;
+            this.wiek=wiek;
+        }
+
+        var osoba1= new Osoba("Jan","Kowalski",26);
+        wypisz.innerHTML+="imie: "+osoba1.imie +"<br>";
+        wypisz.innerHTML+="nazwisko: "+osoba1.nazwisko +"<br>";
+        wypisz.innerHTML+="wiek: "+osoba1.wiek +"<br>"+"<br>";
+
+        
+
+        var osoba2= new Osoba("Matty","Keystone",28);
+        wypisz.innerHTML+="imie: "+osoba2.imie +"<br>";
+        wypisz.innerHTML+="nazwisko: "+osoba2.nazwisko +"<br>";
+        wypisz.innerHTML+="wiek: "+osoba2.wiek +"<br>";
+
+        function WypiszDane(obiekt)
+        {
+
+        for(x in obiekt)
+        {
+            wypisz.innerHTML+=obiekt[x]+" ";
+        }
+         
+        }
+         
+        WypiszDane(osoba1);
+        
+        WypiszDane(osoba2);
+        wypisz.innerHTML+="<br>"+"<br>";
+       
+        
+        
+ 
+
+        function Samochod(marka,model,pojsilnika,rokprodukcji,kolor)
+        {
+            this.marka=marka;
+            this.model=model;
+            this.pojsilnika=pojsilnika;
+            this.rokprodukcji=rokprodukcji;
+            this.kolor=kolor;
+
+        }
+
+        var samochod1= new Samochod("Dodge","Charger",5.7,2024,"czarny");
+        wypisz.innerHTML+="marka: "+samochod1.marka +"<br>";
+        wypisz.innerHTML+="model: "+samochod1.model +"<br>";
+        wypisz.innerHTML+="pojsilnika: "+samochod1.pojsilnika +"<br>";
+        wypisz.innerHTML+="rokprodukcji: "+samochod1.rokprodukcji +"<br>";
+        wypisz.innerHTML+="kolor: "+samochod1.kolor +"<br>"+"<br>";
+        
+
+         WypiszDane(samochod1);
+
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
