@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="kontener1"></p>
+  <p id="kontener2"></p>
+  <script>
+ 
+  var matma=document.getElementById("kontener1");
+  matma.innerHTML+="Funkcje matematyczne wbudowane w JavaScript";
+  var liczba=prompt("podaj liczbe:", "0")
+
+  matma.innerHTML+="<br> Wartosc bezwzgledna z " +liczba +" funkcja Math.abs " +Math.abs(liczba) +"<br>";
+  matma.innerHTML+="<br> zaokraglanie "+liczba +" Math.round " +Math.round(liczba) +"<br>";
+  matma.innerHTML+="<br> zaokraglanie "+liczba +" Math.ceil " +Math.ceil(liczba) +"<br>";
+  matma.innerHTML+="<br> zaokraglanie "+liczba +" Math.ceil " +Math.ceil(liczba) +"<br>";
+  matma.innerHTML+="<br> zaokraglanie "+liczba +" Math.floor " +Math.floor(liczba) +"<br>";
+  matma.innerHTML+="<br> liczba podniesiona do potegi 2 z  "+liczba +" Math.pow " +Math.pow(liczba,2) +"<br>";
+  matma.innerHTML+="<br> pierwiastek z  "+liczba +" Math.ceil " +Math.sqrt(liczba) +"<br>";
+  matma.innerHTML+="<br> liczba pi Math.PI "+Math.PI +"<br>";
+  matma.innerHTML+="<br> losowa liczba z przedzialu od 1 do 10 Math.random "+Math.random()*10 +"<br>";
+  matma.innerHTML+="<br> liczba pi Math.PI "+Math.PI +" zaokraglona do dwoch miejsc po porzecinku  " +Math.round(Math.PI*100) +"<br>";
+  matma.innerHTML+="<br> losowa liczba z przedzialu od 1 do 10 Math.random "+(Math.random()*(10-(10))+(-10)) +"<br>";
+                                                                                            //(MAX-MIN)+MIN
+  
+
+  var data=document.getElementById("kontener2"); 
+  data.innerHTML+="Wyswietlanie obecnej daty wraz z godzina i strefa czasowa: <br> " +Date() +"<br>";
+  var d1=new Date();
+  data.innerHTML+="Wyswietlanie obecnej daty z obiektu: <br> " +d1 +"<br>";
+  var d2=new Date();
+  data.innerHTML+="Wyswietlanie  daty wraz z obiektu z parametrem 1 milisekundy od daty poczatkowej: <br> " +d2 +"<br>";
+  var d3=new Date();
+  data.innerHTML+="Wyswietlanie  daty wraz z obiektu z parametrem 1000 milisekund od daty poczatkowej: <br> " +d3 +"<br>";
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+    
+</body>
+</html>

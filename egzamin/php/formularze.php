@@ -37,7 +37,7 @@ echo"Nazwa Konta: ".$NazwaKonta."<br>";
 $NazwaFirmy=$_POST['NazwaFirmy'];
 echo"Nazwa Firmy: ".$NazwaFirmy."<br>";
 $KodPromocyjny=$_POST['KodPromocyjny'];
-echo"Kod Promocyjny: ".$KodPromocyjny."<br>"."<br>";
+echo"Kod Promocyjny: ".$KodPromocyjny."<br>";
 $Email=$_POST['Email'];
 echo"Email: ".$Email."<br>";
 $Haslo=$_POST['Haslo'];
