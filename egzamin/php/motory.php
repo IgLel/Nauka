@@ -20,7 +20,8 @@
 
   $tab=mysqli_fetch_assoc($wynik):   
   echo "<dl>":
-  echo "<dt>".$tab['nazwa']."rozpoczyna sie w". $tab["poczatek"], <a href=""></a>
+  echo "<dt>".$tab['nazwa']."rozpoczyna sie w". $tab["poczatek"]."<a href=".$tab['zrodlo']."> zobacz zdjecia </a>";
+  echo "<dd>".$tab['opis']."</dd>";
   echo "</d1>"
 
  
