@@ -11,25 +11,25 @@
 
  $polaczenie=mysqli_connect("localhost", "root","", "motory");
 
- $zapytanie="SELECT wycieczki.nazwa, wycieczki.opis, wycieczki.poczatek, zdjecia FROM wycieczki JOIN zdjecia ON wycieczki.zdjecia_id;"
- $wynik=mysqli_query($polaczanie,$zapytanie);
+ $zapytanie="SELECT wycieczki.nazwa, wycieczki.opis, wycieczki.poczatek, zdjecia.zrodlo FROM wycieczki JOIN zdjecia ON wycieczki.zdjecia_id";
+ $wynik=mysqli_query($polaczenie,$zapytanie);
  $ile=mysqli_num_rows($wynik);
  $i=0;
  while($i<$ile)
  {
 
-  $tab=mysqli_fetch_assoc($wynik):   
-  echo "<dl>":
+  $tab=mysqli_fetch_assoc($wynik);   
+  echo "<dl>";
   echo "<dt>".$tab['nazwa']."rozpoczyna sie w". $tab["poczatek"]."<a href=".$tab['zrodlo']."> zobacz zdjecia </a>";
   echo "<dd>".$tab['opis']."</dd>";
-  echo "</d1>"
+  echo "</d1>";
 
  
  }
 
 
 
-
+ $i++;
 
 
  mysqli_close($polaczenie);
@@ -46,7 +46,7 @@
 
 
 
-<?
+ ?>
     
 </body>
 </html>
