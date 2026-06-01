@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadania JS</title>
+</head>
+<body>
+
+    <p id="wynik"></p>
+
+    <script>
+        var wypisz = document.getElementById("wynik");
+
+        wypisz.innerHTML += "<h2>Zadanie 1</h2>";
+
+        var niezdefiniowany; 
+        var liczbaCalkowita = 5;
+        var liczbaZmiennoprzecinkowa = 3.14;
+        var typZnakowy = "A";
+        var boolPrawda = true;
+        var boolFalsz = false;
+        var typPusty = null;
+
+        wypisz.innerHTML += "niezdefiniowany: " + niezdefiniowany + "<br>";
+        wypisz.innerHTML += "liczba całkowita: " + liczbaCalkowita + "<br>";
+        wypisz.innerHTML += "liczba zmiennoprzecinkowa: " + liczbaZmiennoprzecinkowa + "<br>";
+        wypisz.innerHTML += "typ znakowy: " + typZnakowy + "<br>";
+        wypisz.innerHTML += "pierwszy bool: " + boolPrawda + "<br>";
+        wypisz.innerHTML += "drugi bool: " + boolFalsz + "<br>";
+        wypisz.innerHTML += "typ pusty: " + typPusty + "<br>";
+
+
+        wypisz.innerHTML += "<h2>Zadanie 2</h2>";
+
+        var x = 10;
+        var y = 3;
+
+        var suma = x + y;
+        var roznica = x - y;
+        var iloczyn = x * y;
+        var iloraz = x / y;
+        var reszta = x % y;
+        var potega = x ** y;
+        
+        x++; 
+        var poInkrementacji = x; 
+        
+        y--; 
+        var poDekrementacji = y;
+
+        wypisz.innerHTML += "Suma (10 + 3): " + suma + "<br>";
+        wypisz.innerHTML += "Różnica (10 - 3): " + roznica + "<br>";
+        wypisz.innerHTML += "Iloczyn (10 * 3): " + iloczyn + "<br>";
+        wypisz.innerHTML += "Iloraz (10 / 3): " + iloraz + "<br>";
+        wypisz.innerHTML += "Reszta z dzielenia (10 % 3): " + reszta + "<br>";
+        wypisz.innerHTML += "Potęgowanie (10 ^ 3): " + potega + "<br>";
+        wypisz.innerHTML += "Inkrementacja zmiennej x (10++): " + poInkrementacji + "<br>";
+        wypisz.innerHTML += "Dekrementacja zmiennej y (3--): " + poDekrementacji + "<br>";
+
+
+        wypisz.innerHTML += "<h2>Zadanie 3</h2>";
+
+        var a = 15;
+        var b = 25;
+        var c = 10;
+
+        if (a > b && a > c) {
+            wypisz.innerHTML += "a jest największe<br>";
+        } else if (b > a && b > c) {
+            wypisz.innerHTML += "b jest największe<br>";
+        } else {
+            wypisz.innerHTML += "c jest największe<br>";
+        }
+
+
+        wypisz.innerHTML += "<h2>Zadanie 4</h2>";
+
+        var tablica = [1.25, 2.5, 3.75, 4.0, 5.15, 6.6, 7.85, 8.9, 9.05, 10.22];
+
+        for (var i = 0; i < tablica.length; i++) {
+            wypisz.innerHTML += "Na indeksie " + i + " stoi liczba " + tablica[i] + "<br>";
+        }
+    </script>
+
+</body>
+</html>
