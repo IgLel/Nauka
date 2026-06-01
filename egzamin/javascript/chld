@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paliwo</title>
+</head>
+<body>
+    <section>
+      <h2>Orientacyjny koszt paliwa</h2>
+      <label>Rodzaj paliwa (1-benzyna (4zl), 2-olej napedowy (3.5zl))</label>
+      <input type="number" id="rodzaj"> <br>
+      <label>Ile litrow?</label> <br>
+      <input type="number" id="litry"> <br>
+      <button onclick="Funkcja()">OBLICZ</button>
+      <p id="wynik"></p>
+    </section>
+
+    <script>
+        function Funkcja()
+        {
+              var wypisz=document.getElementById('wynik');
+              var rodzaj=document.getElementById('rodzaj').value;
+              var litry=document.getElementById('litry').value;
+              var suma=0;
+              if (rodzaj==1 && litry>0)
+              {
+                suma=4*litry;
+                wypisz.innerHTML="Koszt paliwa: "+suma+ "zl";
+              }
+              else if (rodzaj==2)
+              {
+                suma=3.5*litry;
+                wypisz.innerHTML="Koszt paliwa: "+suma+ "zl";
+              }
+              else
+              {
+                wypisz.innerHTML="Koszt paliwa wynosi 0 zl";
+              }
+
+              wypisz.innerHTML="Tankowanie paliwa to "+rodzaj + "<br>Koszt paliwa wynosi: "+suma+ "zl";
+
+
+        }
+
+
+  </script>
+
+  <section>
+
+
+
+
+
+
+
+
+
+  </section>
+
+
+  
+
+
+
+    
+</body>
+</html>
