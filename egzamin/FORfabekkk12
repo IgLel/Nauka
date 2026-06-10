@@ -1,0 +1,74 @@
+ <header>
+    <h1>Malowanie i gipsowanie</h1>
+
+    </header>
+
+    <main>
+        <nav>
+            <a href="kontakt.html"></a>
+            <a href="https://remonty.pl" target="_blank">Partnerzy</a>
+
+        </nav>
+
+        <section id="lewa">
+            <h2>Dla klientow</h2>
+
+            <form>
+  
+                <label for="pracownicy">Ilu co najmniej pracownikow potrzebujesz?</label>
+            <input 
+            type="number" 
+            id="pracownicy" 
+            name="pracownicy" 
+            >
+
+            <button type="submit">Szukaj firm</button>
+
+            </form>
+
+        </section>
+
+        <section id="srodkowa">
+            <h2>Dla wykonawcow</h2>
+
+            form method="post">
+
+       <label for="kategoria">Wybierz kategorie:</label>
+       <select id="kategoria" name="kategoria">
+   
+       </select>
+
+        <p>Wybierz usługę:</p>
+
+        <label>
+            <input type="radio" name="usluga" value="malowanie" checked>
+            malowanie
+        </label>
+
+        <br>
+
+        <label>
+            <input type="radio" name="usluga" value="gipsowanie">gipsowanie</label>
+
+        <br><br>
+
+            <button type="submit">Szukaj klientow</button>
+
+        </form>
+
+
+        </section>
+
+        <aside>
+            <img src="tapeta_lewa.png" alt="uslugi">
+            <img src="tapeta_prawa.png" alt="uslugi">
+            <img src="tapeta_lewa.png" alt="uslugi">
+        </aside>
+        
+
+
+    </main>
+
+    <footer>
+     <p>Stronę wykonał: <strong>0000</strong></p>
+    </footer>
